@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: brics-summit-2027
+    runtime: python
+    plan: free
+    startCommand: python server.py
+    envVars:
+      - key: BRICS_HOST
+        value: 0.0.0.0
