@@ -1,0 +1,27 @@
+<header class="page-hero wrap">
+  <p class="eyebrow">Admin only</p>
+  <h1>Portfolio desk</h1>
+  <div class="ornament" aria-hidden="true"><span></span><i></i><span></span></div>
+  <p>See which portfolios are still to be given, who asked for each one, and open the Paytm or bank PDFs delegates upload.</p>
+</header>
+<section class="wrap section">
+  <form id="gate" class="form-grid panel">
+    <label>Password <input id="password" type="password" autocomplete="current-password" required></label>
+    <button class="btn btn-primary" type="submit">Sign in</button>
+    <p id="login-message" role="alert"></p>
+  </form>
+  <div id="desk" hidden>
+    <p id="desk-summary"></p>
+    <p class="link-row">
+      <button class="btn btn-primary btn-small" id="show-open" type="button">To be given</button>
+      <button class="btn btn-ghost btn-small" id="show-all" type="button">All portfolios</button>
+      <a class="btn btn-ghost btn-small" href="/secretariat">Secretariat desk</a>
+      <button class="btn btn-ghost btn-small" id="logout" type="button">Sign out</button>
+    </p>
+    <div id="board"></div>
+    <h2>Delegate forms</h2>
+    <div id="registration-list" class="reg-list"></div>
+    <h2>Payment proofs</h2>
+    <div id="proof-list" class="reg-list"></div>
+  </div>
+</section>

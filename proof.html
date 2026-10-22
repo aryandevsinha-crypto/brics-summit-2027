@@ -1,0 +1,25 @@
+<header class="page-hero wrap">
+  <p class="eyebrow">Delegate fee</p>
+  <h1>Upload payment proof</h1>
+  <div class="ornament" aria-hidden="true"><span></span><i></i><span></span></div>
+  <p>After you pay by Paytm, UPI, or bank transfer, upload the receipt as a PDF. Only the admin desk can open it.</p>
+</header>
+<section class="wrap section">
+  <form id="proof-form" class="form-grid panel">
+    <div id="proof-errors" role="alert"></div>
+    <div id="proof-done" class="ok" hidden>
+      <p>The desk has your payment proof. You can close this page.</p>
+    </div>
+    <label>Full name <input id="full-name" name="fullName" autocomplete="name" maxlength="120" required></label>
+    <div class="grid-2">
+      <label>Email <input id="email" name="email" type="email" autocomplete="email" maxlength="160" required></label>
+      <label>Mobile <input id="mobile" name="mobile" type="tel" autocomplete="tel" inputmode="tel" required></label>
+    </div>
+    <label>Committee <select id="committee" required></select></label>
+    <label>Portfolio this payment is for <select id="portfolio"></select></label>
+    <label>Note <textarea id="note" maxlength="400"></textarea></label>
+    <label>Payment proof PDF <input id="proof-file" name="proof" type="file" accept="application/pdf,.pdf" required></label>
+    <p class="muted">Save the Paytm receipt or bank slip as a PDF. The file can be up to 8 MB.</p>
+    <button class="btn btn-primary" id="proof-submit" type="submit">Send proof to the desk</button>
+  </form>
+</section>

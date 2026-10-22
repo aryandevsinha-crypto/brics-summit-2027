@@ -1,0 +1,53 @@
+<header class="page-hero wrap">
+  <p class="eyebrow">Delegate registration</p>
+  <h1>Register for a portfolio</h1>
+  <div class="ornament" aria-hidden="true"><span></span><i></i><span></span></div>
+  <p>Fill this form on the site. The portfolio you choose is held for you, and the admin desk can see your details.</p>
+  <p class="alert">Registration is only accepted with a PDF of your Paytm receipt or bank transaction proof. The form will not save a registration without that file.</p>
+  <p id="closed-banner" class="alert" hidden>Registration is closed.</p>
+</header>
+<section class="wrap section">
+  <form id="register-form" class="form-grid panel">
+    <div id="form-errors" role="alert"></div>
+    <div id="form-done" class="ok" hidden></div>
+    <fieldset class="form-grid">
+      <legend>Delegate</legend>
+      <label>Full name <input id="full-name" name="fullName" autocomplete="name" maxlength="120" required></label>
+      <div class="grid-2">
+        <label>Email <input id="email" name="email" type="email" autocomplete="email" maxlength="160" required></label>
+        <label>Mobile <input id="mobile" name="mobile" type="tel" autocomplete="tel" inputmode="tel" required></label>
+      </div>
+      <div class="grid-2">
+        <label>School <input id="school" name="school" autocomplete="organization" maxlength="160" required></label>
+        <label>Class or year <input id="class-year" name="classYear" maxlength="40" required></label>
+      </div>
+      <label>City <input id="city" name="city" autocomplete="address-level2" maxlength="80" required></label>
+    </fieldset>
+    <fieldset class="form-grid">
+      <legend>Committee and portfolio</legend>
+      <label>Committee <select id="committee" required></select></label>
+      <label>Portfolio you want <select id="portfolio" required></select></label>
+      <p id="portfolio-note" class="muted"></p>
+    </fieldset>
+    <fieldset class="form-grid">
+      <legend>Emergency contact</legend>
+      <div class="grid-2">
+        <label>Name <input id="emergency-name" autocomplete="name" maxlength="120" required></label>
+        <label>Phone <input id="emergency-phone" type="tel" autocomplete="tel" required></label>
+      </div>
+      <label>Note <textarea id="notes" maxlength="600"></textarea></label>
+      <label class="check"><input id="conduct" name="conductAccepted" type="checkbox" required><span>I will uphold respectful diplomacy, inclusive participation, evidence-based debate, and professional conduct.</span></label>
+      <label class="check"><input id="dress" name="dressAccepted" type="checkbox" required><span>I will follow the formal Indian/Western dress code.</span></label>
+    </fieldset>
+    <fieldset class="form-grid">
+      <legend>Pay and attach the receipt</legend>
+      <p id="fee-line">Loading the fee…</p>
+      <p id="payment-note"></p>
+      <div id="register-qr" class="pay-scan"></div>
+      <p class="muted">Scan this code with Paytm or any UPI app, pay, then attach the receipt PDF on this form.</p>
+      <label>Payment proof PDF <input id="proof-file" name="proof" type="file" accept="application/pdf,.pdf" required></label>
+      <p class="muted">Save the Paytm receipt or bank slip as a PDF. The file can be up to 8 MB. Registration is only accepted with this PDF.</p>
+    </fieldset>
+    <button class="btn btn-primary" id="register-submit" type="submit">Submit registration</button>
+  </form>
+</section>
